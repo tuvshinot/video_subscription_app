@@ -1,0 +1,8 @@
+{% extends 'courses/base.html' %}
+
+{% block content %}
+    <h1>Courses</h1>
+    {% for course in object_list %}
+        <p><a href="{{ course.get_absolute_url }}">{{ course }}</a></p>
+    {%  endfor %}
+{% endblock %}
