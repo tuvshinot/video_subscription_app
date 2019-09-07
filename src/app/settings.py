@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -136,7 +135,7 @@ MEDIA_ROOT = os.path.join(VENV_PATH, 'media_root')
 
 if DEBUG:
     STRIPE_PUBLISHABLE_KEY = ''
-    STRIPE_SECRET_KEY = 'sk_test_ZQoCflkbzxCM97gqPxkaZ64n00uHtsXeet'
+    STRIPE_SECRET_KEY = ''
 else:
     # live key
     STRIPE_PUBLISHABLE_KEY = ''

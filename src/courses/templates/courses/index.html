@@ -1,0 +1,6 @@
+{% extends 'courses/base.html' %}
+
+{% block content %}
+    <h1>{{ hello }}</h1>
+    <h2><a href="{% url 'courses:list' %}">Go to Courses >>>></a></h2>
+{% endblock %}

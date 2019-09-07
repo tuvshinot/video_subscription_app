@@ -6,6 +6,10 @@ from .models import Course
 from memberships.models import UserMemberShip
 
 
+def index(request):
+    """ Landing page for app """
+    return render(request, 'courses/index.html', { 'hello' : 'Hello world!'})
+
 class CourseListView(ListView):
     """ ListView for Listing Courses """
     model = Course
